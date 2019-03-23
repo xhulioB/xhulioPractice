@@ -1,0 +1,163 @@
+
+* {
+      /*border: 1px solid black;*/
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: "Libre Baskerville", Helvetica, Arial, sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 80%;
+	margin: auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a { text-decoration: underline;
+    color: #000000;
+}
+
+/* Each state */
+
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none;}
+a:hover, a:active {
+  text-decoration: none;
+  color: #4C554C;
+}
+
+.title__container {
+  height: auto;
+  margin-top: 50px;
+  font: 150px Libre Baskerville;
+  font-kerning: normal;
+/* letter-spacing: -10px; --
+--font kernaling works but very minute for Baskerville fonts
+--letter spacing here effects .toppagetext below name*/
+  margin-bottom: 160px;
+}
+
+.emailstyle {
+  font: 20px Libre Baskerville;
+  margin-top: 40px;
+}
+.pagetext {
+  width: 100%;
+  margin-top: 20px;
+  font-kerning: normal;
+  font: 20px Libre Baskerville;
+}
+.toppagetext {
+  width: 50%;
+  margin-top: 20px;
+  font-kerning: normal;
+  font: 25px Libre Baskerville;
+}
+.displaycontainer {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 220px;
+}
+
+.diptych__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.diptych__both {
+  width: 49.5%;
+  height: 100%;
+}
+
+.fourplex__flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.fourplex__each {
+  height: 49.5%;
+  width: 49.5%;
+  margin-top: 10px;
+}
+
+.landscape__flex {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.landscape__each {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.twoxlandscape__margin {
+  margin-bottom: 375px;
+}
+
+.footertext__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footertext {
+  font: 20px Libre Baskerville;
+  margin-top: 100px;
+}
+#footer_row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  max-width: 100%;
+  margin-top: 9em;
+}
+
+#messagelink {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex: 3 0 0;
+  flex: 3 0 0;
+}
+
+#resumelink {
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex: 3 0 0;
+   flex: 3 0 0;
+}
+
+#toplink {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-flex: .3 0 0;
+  flex: .3 0 0;
+}

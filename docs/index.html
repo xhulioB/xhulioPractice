@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--VERSION 2.0-->
+<!--VERSION 2.0-->
+<!--VERSION 2.0-->
+<!--VERSION 2.0-->
+<!--VERSION 2.0-->
+<!--POINTS TO style.css-->
+
+<!--IMAGE SIZING:
+	Generally, 1700 equates to full width of screen w/o
+	siderails Other sizes are probably possible, Generally
+	need to trim images to keep 1700 width
+	Forex: a landscape 1700 width with more height should
+	be fine, as long as you trim the image, rather than shrinking
+	Likewise, fourplex should stay with 400x400 trimsize ratio, but
+	you could try 600x or 800x, see what the results are
+
+	dyptic: 1700x2500px
+	2x2fourplex: 800x800px
+	2x Landscape: 1700x800px
+	3x Landscape: 1700x400px
+-->
+
+	<head>
+  	<meta charset="utf-8">
+		<meta name="description" content="Website for Burgeoning Architectural Talent">
+	  <meta name="keywords" content="HTML, CSS, Architecture, Images">
+	  <meta name="author" content="XB">
+		<title>xhulio</title>
+		<!-- external CSS link -->
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<a name="top"></a>
+		<div id="container">
+			<main>
+<!-- xhulio title at top of page -->
+				<div class="title__container">
+					<span>xhulio</span>
+<!-- xhulio introductory text -->
+					<div class="toppagetext">
+	  				xhulio binjaku is an architectural designer, geographer and writer
+						with a recent graduate degree from MIT's school of architecture and planning.
+					</div>
+					<div class="emailstyle">xhulio@xhulio.com</div>
+				</div>
+<!-- DisplayBlock-ONE--Single Large Image -->
+				<div class="displaycontainer">
+					<div>
+						<img src="./images/A2-small.jpg">
+					</div>
+					<div class="pagetext">
+						some <a href="https://en.wikipedia.org">
+						text</a> here maybe a lot of text that
+						overflows the div its in maybe a lot more more more, may be a lot more more more,
+						may be a lot more more more, maybe a lot more more more
+					</div>
+				</div>
+<!-- DisplayBlock-TWO--TwoImage L-R Diptych -->
+				<div class="displaycontainer">
+					<div class="diptych__flex">
+
+						<!-- Left side Diptych -->
+						<img class="diptych__both" src="./images/newB2.jpg">
+							<!-- Right side Diptych -->
+						<img class="diptych__both" src="./images/newD6.jpg">
+
+					</div>
+					<div class="pagetext">
+						some Text maybe a lot of text that
+						overflows the div its in
+					</div>
+				</div>
+<!-- DisplayBlock-TWO--TwoImage L-R Diptych copy -->
+				<div class="displaycontainer">
+					<div class="diptych__flex">
+
+						<!-- Left side Diptych -->
+						<img class="diptych__both" src="./images/newB2.jpg">
+							<!-- Right side Diptych -->
+						<img class="diptych__both" src="./images/newD6.jpg">
+
+					</div>
+					<div class="pagetext">
+						some Text maybe a lot of text that
+						overflows the div its in
+					</div>
+				</div>
+
+<!-- DisplayBlock-THREE--Fourplex2x2 -->
+				<div class="displaycontainer">
+					<div class="fourplex__flex">
+
+						<!-- Top Left -->
+						<img class="fourplex__each" src="./images/4plexOneA.jpg">
+						<!-- Top Right -->
+						<img class="fourplex__each" src="./images/4plexOneA.jpg">
+						<!-- Bottom Left -->
+						<img class="fourplex__each" src="./images/4plexOneA.jpg">
+						<!-- Bottom Right -->
+						<img class="fourplex__each" src="./images/4plexOneA.jpg">
+
+					</div>
+					<div class="pagetext">
+						some Text here maybe a lot of text that
+						overflows the div its in
+					</div>
+				</div>
+<!-- DisplayBlock-FOUR--2xLandscape -->
+				<div class="displaycontainer twoxlandscape__margin">
+					<div class="landscape__flex">
+
+						<!-- 2xLandscape Top -->
+						<img class="landscape__each" src="./images/LandscapeTall.jpg">
+						<!-- 2xLandscape Bottom -->
+						<img class="landscape__each" src="./images/LandscapeTall.jpg">
+
+					</div>
+
+					<div class="pagetext">
+						some Text here maybe a lot of text that
+						overflows the div its in
+					</div>
+				</div>
+<!-- DisplayBlock-FIVE--3xLandscape -->
+				<div class="displaycontainer">
+					<div class="landscape__flex">
+
+						<!-- 3xLandscape Top -->
+						<img class="landscape__each" src="./images/LandscapeShort.jpg">
+						<!-- 3xLandscape Middle -->
+						<img class="landscape__each" src="./images/LandscapeShort.jpg">
+						<!-- 3xLandscape Bottom -->
+						<img class="landscape__each" src="./images/LandscapeShort.jpg">
+
+					</div>
+					<div class="pagetext">
+						some Text here maybe a lot of text that
+						overflows the div its in
+					</div>
+				</div>
+<!-- Footer Display Block -->
+			<div class="footertext__flex">
+						<span class="footertext">xhulio@xhulio.com</span>
+						<a class="footertext" href="#top">top</span>
+			</div>
+
+			</main>
+		</div>
+<!-- #container -->
+	</body>
+
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCsM2qpONjKnoEkZr76FSQvaVC3MdpiZR0",
+    authDomain: "xhuliobin.firebaseapp.com",
+    databaseURL: "https://xhuliobin.firebaseio.com",
+    projectId: "xhuliobin",
+    storageBucket: "xhuliobin.appspot.com",
+    messagingSenderId: "233000592819"
+  };
+  firebase.initializeApp(config);
+</script>
